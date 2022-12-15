@@ -444,6 +444,206 @@ export const resource_types = [
       }
     ]
   },
+  {
+    "resource_name": "createtype",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "getalltypes",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "createseverity",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "getallseverity",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "createticket",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "updatetickets",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "getallticket",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "searchtickets",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
   
     
 ]

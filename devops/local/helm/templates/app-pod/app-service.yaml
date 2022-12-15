@@ -24,5 +24,17 @@ spec:
     port: {{ .Values.service.systementry.port }}
     targetPort: {{ .Values.service.systementry.targetPort }}
 
+  - name: {{ .Values.service.severity.name }}
+    port: {{ .Values.service.severity.port }}
+    targetPort: {{ .Values.service.severity.targetPort }}
+
+  - name: {{ .Values.service.servicetypes.name }}
+    port: {{ .Values.service.servicetypes.port }}
+    targetPort: {{ .Values.service.servicetypes.targetPort }}
+
+  - name: {{ .Values.service.ticketapp.name }}
+    port: {{ .Values.service.ticketapp.port }}
+    targetPort: {{ .Values.service.ticketapp.targetPort }}
+
   selector:
     name: {{ .Values.app.prefix }}-app

@@ -1,0 +1,59 @@
+<h2 class="screen-align">Createticket</h2>
+<div id="template-irxy" class="gjs-row">
+    <div id="template-i2kk" class="gjs-cell">
+        <label id="template-iapu" class="label ">
+            <div id="template-imklh" class="">Name</div>
+            <br id="template-ibkrh" class="">
+        </label>
+        <input id="template-ifhvy" [(ngModel)]="tickets.name" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="input form-control " />
+    </div>
+    <div id="template-ingz" class="gjs-cell">
+        <label id="template-iu8sw" class="label ">
+            <div id="template-irk1l" class="">Description</div>
+        </label>
+        <input id="template-idmkh" [(ngModel)]="tickets.description" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="input form-control " />
+    </div>
+    <div id="template-ig2i" class="gjs-cell">
+        <label id="template-irzn8" class="label ">
+            <div id="template-i7di9" class="">CallerName</div>
+        </label>
+        <input id="template-i9977" [(ngModel)]="tickets.callername" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="input form-control " />
+    </div>
+</div>
+<div id="template-i7ol" class="gjs-row">
+    <div id="template-irvh" class="gjs-cell">
+        <label id="template-iprz9" class="label ">
+            <div id="template-i4jg1" class="">Severity</div>
+        </label>
+        <div id="template-ifop6" class="">
+            <ng-select id="template-iowrx" name="dynamicdropdown_template-iowrx" [searchable]="true"
+            [virtualScroll]="true" [items]="severityitemArray" bindLabel="name" bindValue="name"
+            [(ngModel)]="tickets.severity" [ngModelOptions]="{standalone: true}" ngDefaultControl
+            (click)="severityGpGetAllValues()" class="form-control "></ng-select>
+        </div>
+        <div value="1" id="template-il9x4" class="">
+            <div id="template-ihiic" class="">1</div>
+        </div>
+        <button id="template-ibxq2" (click)="GpCreate()" class="button btn btn-primary ">
+            <div id="template-irifk" class="">Create</div>
+        </button>
+    </div>
+    <div id="template-ijpg" class="gjs-cell">
+        <label id="template-iudhl" class="label ">
+            <div id="template-i8uqw" class="">Types</div>
+        </label>
+        <div id="template-ickkl" class="">
+            <ng-select id="template-iyqyq" name="dynamicdropdown_template-iyqyq" [searchable]="true"
+            [virtualScroll]="true" [items]="typesitemArray" bindLabel="name" bindValue="name"
+            [(ngModel)]="tickets.types" [ngModelOptions]="{standalone: true}" ngDefaultControl
+            (click)="typesGpGetAllValues()" class="form-control "></ng-select>
+        </div>
+        <div value="1" id="template-isvec" class="">
+            <div id="template-icmk4" class="">1</div>
+        </div>
+    </div>
+    <div id="template-i6x8" class="gjs-cell"></div>
+</div>

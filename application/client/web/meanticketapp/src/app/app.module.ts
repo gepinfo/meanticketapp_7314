@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginModule } from './login/login.module';
 import { SignupModule } from './signup/signup.module';
 import { HomeModule } from './home/home.module';
@@ -17,14 +19,10 @@ import { ManageusersModule } from './manageusers/manageusers.module';
 import { ManagecontrolModule } from './managecontrol/managecontrol.module';
 import { UserModule } from './user/user.module';
 import { VaultadminModule } from './vaultadmin/vaultadmin.module';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SefscreenModule } from './sefscreen/sefscreen.module';
 
 @NgModule({
   declarations: [
-      AppComponent
-],
   imports: [
       BrowserModule,
 BrowserAnimationsModule,
@@ -33,6 +31,8 @@ TranslatorModule,
 HeaderModule,
 FooterModule,
 TemplateModule,
+HttpClientModule,
+FormsModule,
 LoginModule,
 SignupModule,
 HomeModule,
@@ -42,14 +42,13 @@ ManageusersModule,
 ManagecontrolModule,
 UserModule,
 VaultadminModule,
-HttpClientModule,
-FormsModule,
 SefscreenModule
 ],
   providers: [
-  	SharedService
+          	SharedService
 ],
   bootstrap: [
-  ]
+  AppComponent
+]
 })
 export class AppModule { }

@@ -30,6 +30,14 @@ const routes: Routes = [
 { path: 'vaultadmin', component: VaultadminComponent, canActivate: [AuthGuard] },
        { path: '', component: TemplateComponent, pathMatch: 'full'   } 
 
+{ path : 'createseverity', loadChildren: () => import('./createseverity/createseverity.module').then(m => m.CreateseverityModule), canActivate: [AuthGuard] } , 
+{ path : 'getallseverity', loadChildren: () => import('./getallseverity/getallseverity.module').then(m => m.GetallseverityModule), canActivate: [AuthGuard] } , 
+{ path : 'createtype', loadChildren: () => import('./createtype/createtype.module').then(m => m.CreatetypeModule), canActivate: [AuthGuard] } , 
+{ path : 'getalltypes', loadChildren: () => import('./getalltypes/getalltypes.module').then(m => m.GetalltypesModule), canActivate: [AuthGuard] } , 
+{ path : 'createticket', loadChildren: () => import('./createticket/createticket.module').then(m => m.CreateticketModule), canActivate: [AuthGuard] } , 
+{ path : 'updatetickets', loadChildren: () => import('./updatetickets/updatetickets.module').then(m => m.UpdateticketsModule), canActivate: [AuthGuard] } , 
+{ path : 'getallticket', loadChildren: () => import('./getallticket/getallticket.module').then(m => m.GetallticketModule), canActivate: [AuthGuard] } , 
+{ path : 'searchtickets', loadChildren: () => import('./searchtickets/searchtickets.module').then(m => m.SearchticketsModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({

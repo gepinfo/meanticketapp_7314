@@ -60,6 +60,91 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('createtype') && userId">
+                                    <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('createtype') && userId">
+                                        <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('createtype') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                        </div>
+                                        <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('createtype') && userId"> <a id="i9imej" class="gpd-text" href="#servicetypes" data-toggle="collapse"
+                                            data-parent="#MainMenu">servicetypes <i class="fa fa-caret-down"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="servicetypes" *ngIf="isApplicable('createtype') && userId">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/createtype']">{{'source.createtype' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/getalltypes']">{{'source.getalltypes' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('createseverity') && userId">
+                                    <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('createseverity') && userId">
+                                        <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('createseverity') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                        </div>
+                                        <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('createseverity') && userId"> <a id="i9imej" class="gpd-text" href="#severity" data-toggle="collapse"
+                                            data-parent="#MainMenu">severity <i class="fa fa-caret-down"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="severity" *ngIf="isApplicable('createseverity') && userId">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/createseverity']">{{'source.createseverity' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/getallseverity']">{{'source.getallseverity' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="icrvgp" class="cell gpd-clm" *ngIf="isApplicable('createticket') && userId">
+                                    <div id="i6vd27" class="gdp-row gpd-grid" *ngIf="isApplicable('createticket') && userId">
+                                        <div id="inlo1l" class="cell gpd-clm" *ngIf="isApplicable('createticket') && userId"> <i id="iyxitk" class="fa fa-folder-open" aria-hidden="true"></i>
+
+                                        </div>
+                                        <div id="iytw4t" class="cell gpd-clm" *ngIf="isApplicable('createticket') && userId"> <a id="i9imej" class="gpd-text" href="#ticketapp" data-toggle="collapse"
+                                            data-parent="#MainMenu">ticketapp <i class="fa fa-caret-down"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collapse" id="ticketapp" *ngIf="isApplicable('createticket') && userId">
+                                    <div id="icrvgp" class="cell gpd-clm">
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/createticket']">{{'source.createticket' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/updatetickets']">{{'source.updatetickets' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/getallticket']">{{'source.getallticket' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                        <div id="i6vd27" class="gdp-row gpd-grid">
+                                            <div id="iytw4t" class="cell gpd-clm"> <a id="i9imej" class="gpd-text" [routerLink]="['/searchtickets']">{{'source.searchtickets' | i18next}}</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div id="icrvgp" class="cell gpd-clm" *ngIf='userId!=null'>
                                     <div id="i6vd27" class="gdp-row gpd-grid" *ngIf='userId!=null'>
                                         <div id="inlo1l" class="cell gpd-clm" *ngIf='userId!=null'> <i id="iyxitk" class="fa fa-sign-out" aria-hidden="true"></i>

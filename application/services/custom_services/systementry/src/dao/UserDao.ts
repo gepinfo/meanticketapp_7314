@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import UserModel from '../models/User';
+import UserModel from '../models/daomodels/User';
 import { CustomLogger } from '../config/Logger'
 import { SystemEntryService } from '../config/SystemEntryService';
 import { SefServices } from '../apiservices/sefservices';

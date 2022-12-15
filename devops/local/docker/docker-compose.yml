@@ -137,6 +137,9 @@ services:
       - securitymanager
       - systemcredentialmanager
       - systementry
+      - severity
+      - servicetypes
+      - ticketapp
 
     logging:
       driver: "fluentd"
@@ -202,7 +205,55 @@ services:
     image: systementry-7314
     container_name: systementry-7314
     ports: 
-      - 8010:8010
+      - 8014:8014
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+
+  severity: 
+    build: ../../../application/services/custom_services/severity
+    image: severity-7314
+    container_name: severity-7314
+    ports: 
+      - 8015:8015
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+
+  servicetypes: 
+    build: ../../../application/services/custom_services/servicetypes
+    image: servicetypes-7314
+    container_name: servicetypes-7314
+    ports: 
+      - 8016:8016
+    env_file: .env
+    depends_on:
+      - mongo
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+
+  ticketapp: 
+    build: ../../../application/services/custom_services/ticketapp
+    image: ticketapp-7314
+    container_name: ticketapp-7314
+    ports: 
+      - 8017:8017
     env_file: .env
     depends_on:
       - mongo
